@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1 id="prs"></h1>
+
+
+    <script>
+        var a,b;
+        a=parseInt(prompt("enter your units:-"));
+        b=0
+
+        if (a<=50) {
+            b= +a*1;
+        }else if(a>50 && a<=150){
+            b=(50*1 + (a-50)*2);
+        }else if(a>150 && a<=250){
+           b=(50*1 +100*2 +(a-150)*3);
+        }else if(a>250){
+            b=(50*1 +100*2 + 150*3(a-250)*4);
+        }
+        if(b>150){
+            b=b+b*0.2;
+        }
+
+        document.getElementById('prs').innerHTML="your bill amount is:- " + b;
+    </script>
+</body>
+</html>
